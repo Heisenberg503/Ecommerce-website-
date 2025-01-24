@@ -42,22 +42,38 @@ html, body {
     padding:0%;
     flex-wrap: wrap;
 }
+.Hrow{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
 .column{
-    
-    color:#FFFF;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    color:#FFFFFF;
     font-family: 'Roboto', sans-serif;
     float:left;
     width:25%;
     text-align: center;
-    flex-wrap: wrap;
+    padding:50px;
 }
 .column img{
-    width:200;
-    height:200;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border:5px outset #FFFFFF;
+    border-radius: 15px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
 }
 marquee {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    margin: 1px 0;
+    font-size: 25px;
     font-weight: bold;
     text-shadow: 1px 1px 1px;
 }
