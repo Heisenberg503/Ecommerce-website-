@@ -1,10 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #121212;
+html, body {
+    height: 100%; 
+    background: linear-gradient(180deg,#6f86eb,#1F2326 80%);
+    font-family: 'Roboto', sans-serif; 
+    color: #fdfdff;
 }
 
 #navbar{
@@ -16,6 +20,9 @@ body{
     display: inline;
     text-align: center;
     float: left;
+    color: #FFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 .navitem a {
@@ -25,4 +32,56 @@ body{
     background-color: #dddddd;
     color: white;
     text-decoration: none;
+}
+.Hcolumn{
+    color:#FFFF;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    width:33.33%;
+    text-align: center;
+    padding:0%;
+    flex-wrap: wrap;
+}
+.Hrow{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.column{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    float:left;
+    width:25%;
+    text-align: center;
+    padding:50px;
+}
+.column img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border:5px outset #FFFFFF;
+    border-radius: 15px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+    width: 100%;
+    }
+}
+marquee {
+    margin: 1px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px;
+}
+.Footer1{
+    text-align:center;
+    padding: 50px;
+}
+.Footer2{
+    text-align:center;
+    padding:50px;
 }
